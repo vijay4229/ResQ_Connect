@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResQ Connect - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-disaster flex items-center justify-center h-screen fade-in">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-96 border-t-4 border-red-600">
+        
+        <div class="text-center mb-6">
+            <h1 class="text-2xl font-bold text-red-600">ResQ Connect</h1>
+            <p class="text-gray-500 text-sm">Disaster Management System</p>
+        </div>
+
+        <form id="loginForm" class="space-y-4">
+            <div>
+                <label class="block text-gray-700 text-sm font-bold mb-1">Username</label>
+                <input type="text" id="username" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter username" required>
+            </div>
+            <div>
+                <label class="block text-gray-700 text-sm font-bold mb-1">Password</label>
+                <input type="password" id="password" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-red-500" placeholder="Enter password" required>
+            </div>
+            <button type="submit" class="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 transition font-bold shadow-md">Login</button>
+        </form>
+
+        <p id="errorMsg" class="text-red-500 text-sm text-center mt-4 hidden"></p>
+
+        <div class="mt-6 text-center border-t pt-4">
+            <p class="text-gray-600 text-sm">New Citizen?</p>
+            <a href="register.html" class="text-red-600 font-bold hover:underline">Create an Account</a>
+        </div>
+
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>
